@@ -1,11 +1,26 @@
 /*=============================================== NavFooter component ===============================================*/
 
-import { useLocation } from "react-router-dom"
-import { allComponents } from "../../../data"
+import { useLocation, useNavigate } from "react-router-dom"
+import { slugify } from "@julseb-lib/react"
+import { allPages } from "../../../data"
+import { PATHS } from "../../../routes"
 import { StyledNavFooter } from "./styles"
 
 export const NavFooter = () => {
-    // const { pathname } = useLocation()
+    const { pathname } = useLocation()
+    const navigate = useNavigate()
+
+    const currentPage = allPages.filter(page => {
+        return pathname === "/"
+            ? page.name === "Homepage"
+            : slugify(pathname.replace("/", "")) ===
+                  slugify(page.name.toLowerCase())
+    })
+
+    console.log({ pathname, currentPage })
+
+    // const pageIndex = currentPage ? allPages.indexOf(currentPage) : 0
+
     // const componentName = pathname.split("/")[2]
 
     // const pageComponent =

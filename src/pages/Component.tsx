@@ -1,11 +1,13 @@
 /*=============================================== Component ===============================================*/
 
+import { useParams } from "react-router-dom"
 import { Page } from "../components"
 
 export const Component = () => {
-    return (
-        <Page title="Component">
+    const { category, component } = useParams<{
+        category: string
+        component: string
+    }>()
 
-        </Page>
-    )
+    return <Page title="Component"></Page>
 }

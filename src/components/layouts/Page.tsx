@@ -1,7 +1,14 @@
 /*=============================================== Page ===============================================*/
 
 import styled from "styled-components"
-import { Main, Wrapper, SPACERS, Footer, ButtonIcon } from "@julseb-lib/react"
+import {
+    Main,
+    Wrapper,
+    SPACERS,
+    Footer,
+    ButtonIcon,
+    filterObject,
+} from "@julseb-lib/react"
 import { BaseLayout, Header, Nav } from "../"
 import { NavFooter } from "./NavFooter"
 import { footerLinks } from "../../data"
@@ -22,19 +29,29 @@ export const Page: FC<IPage> = ({ title, children }) => {
             <NavFooter />
 
             <StyledFooter
-                links={footerLinks.map(link => ({
-                    ...link,
-                    text: (
-                        <ButtonIcon
-                            icon={(link.text as string).toLowerCase()}
-                            size={24}
-                            iconSize={24}
-                            variant="transparent"
-                            tooltip={link.text as string}
-                            showTooltip
-                        />
-                    ),
-                }))}
+                links={
+                    footerLinks.map(link => {
+                        const filteredObject = filterObject(
+                            link,
+                            // @ts-ignore
+                            ([n]) => n !== "blank"
+                        )
+                        return {
+                            ...filteredObject,
+                            text: (
+                                <ButtonIcon
+                                    icon={(link.text as string).toLowerCase()}
+                                    size={24}
+                                    iconSize={24}
+                                    variant="transparent"
+                                    tooltip={link.text as string}
+                                    showTooltip
+                                    blank={link.blank}
+                                />
+                            ),
+                        }
+                    }) as any
+                }
                 direction="vertical"
                 linksSeparator="none"
                 withSeparator

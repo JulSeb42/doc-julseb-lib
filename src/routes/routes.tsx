@@ -6,6 +6,8 @@ import { Homepage } from "../pages/Homepage"
 import { NotFound } from "../pages/NotFound"
 import { GettingStarted } from "../pages/GettingStarted"
 import { BoilerplatesAndCli } from "../pages/BoilerplatesAndCli"
+import { Category } from "../pages/Category"
+import { Component } from "../pages/Component"
 /* prepend import - do not remove */
 
 type Route = {
@@ -31,6 +33,9 @@ export const routes: Array<Route> = [
         path: PATHS.CLI_AND_BOILERPLATES,
         element: <BoilerplatesAndCli />,
     },
+
+    { path: PATHS.CATEGORY, element: <Category /> },
+    { path: PATHS.COMPONENT, element: <Component /> },
     /* prepend route - do not remove */
 
     ...redirects,

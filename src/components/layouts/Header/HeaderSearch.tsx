@@ -14,7 +14,7 @@ import {
     Flexbox,
     Button,
 } from "@julseb-lib/react"
-import { allComponents } from "../../../data"
+import { allPages } from "../../../data"
 import { InputContainer, ModalContainer } from "./styles"
 
 export const HeaderSearch = () => {
@@ -57,7 +57,7 @@ export const HeaderSearch = () => {
                         label="Search components globally"
                         value={value}
                         setValue={setValue}
-                        listResults={allComponents.map(c => c.name)}
+                        listResults={allPages.map(c => c.name)}
                     />
 
                     <Flexbox gap="xs">
