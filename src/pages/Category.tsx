@@ -2,7 +2,6 @@
 
 import { useParams, useNavigate, useLocation } from "react-router-dom"
 import { slugify } from "@julseb-lib/react"
-import { Page } from "../components"
 import { allPages } from "../data"
 import { NotFound } from "./NotFound"
 

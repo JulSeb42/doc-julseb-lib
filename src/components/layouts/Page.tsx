@@ -23,10 +23,12 @@ export const Page: FC<IPage> = ({ title, children }) => {
             <Nav />
 
             <StyledWrapper>
-                <Main size="large">{children}</Main>
-            </StyledWrapper>
+                <Main size="large" minHeight="70vh">
+                    {children}
+                </Main>
 
-            <NavFooter />
+                <NavFooter />
+            </StyledWrapper>
 
             <StyledFooter
                 links={
@@ -52,8 +54,6 @@ export const Page: FC<IPage> = ({ title, children }) => {
                         }
                     }) as any
                 }
-                direction="vertical"
-                linksSeparator="none"
                 withSeparator
             />
         </BaseLayout>
@@ -63,18 +63,16 @@ export const Page: FC<IPage> = ({ title, children }) => {
 type IPage = IBaseLayout & {}
 
 const StyledWrapper = styled(Wrapper)`
-    padding-top: ${SPACERS.XXL};
-    position: relative;
+    flex-direction: column;
     width: calc(100% - ${NAV_WIDTH}px);
+    position: relative;
     left: ${NAV_WIDTH}px;
-
-    & > main {
-        min-height: 85vh;
-    }
+    align-items: center;
 `
 
 const StyledFooter = styled(Footer)`
-    max-width: calc(100% - ${NAV_WIDTH}px);
+    width: calc(100% - ${NAV_WIDTH}px);
     position: relative;
     left: ${NAV_WIDTH}px;
+    justify-content: center;
 `
