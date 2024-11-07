@@ -68,6 +68,7 @@ const StyledWrapper = styled(Wrapper)`
     position: relative;
     left: ${NAV_WIDTH}px;
     align-items: center;
+    padding-top: ${SPACERS.XXL};
 `
 
 const StyledFooter = styled(Footer)`

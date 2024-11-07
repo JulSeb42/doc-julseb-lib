@@ -31,9 +31,9 @@ export const NavFooter = () => {
             ) : (
                 <StyledLink
                     to={
-                        prevPage.name === "Homepage"
+                        prevPage?.name === "Homepage"
                             ? PATHS.ROOT
-                            : prevPage.category
+                            : prevPage?.category
                             ? `/${slugify(prevPage.category)}/${slugify(
                                   prevPage.name
                               )}`
@@ -51,14 +51,14 @@ export const NavFooter = () => {
             ) : (
                 <StyledLink
                     to={
-                        nextPage.category
+                        nextPage?.category
                             ? `/${slugify(nextPage.category)}/${slugify(
                                   nextPage.name
                               )}`
                             : `/${slugify(nextPage.name)}`
                     }
                 >
-                    {toTitleCase(nextPage.name)}
+                    {toTitleCase(nextPage?.name)}
 
                     <Icon src="arrow-right" {...(commonIconProps as any)} />
                 </StyledLink>

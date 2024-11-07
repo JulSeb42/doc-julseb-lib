@@ -1,19 +1,13 @@
 /*=============================================== Homepage ===============================================*/
 
-import { Text, CodeContainer, Section, slugify } from "@julseb-lib/react"
+import { Text, CodeContainer, Section } from "@julseb-lib/react"
 import { Page } from "../components"
-import { SITE_DATA, allPages } from "../data"
+import { SITE_DATA } from "../data"
 
 export const Homepage = () => {
     return (
         <Page title="Homepage">
             <Text tag="h1">{SITE_DATA.NAME}</Text>
-
-            <ul>
-                {allPages.map(p => (
-                    <li key={p.name}>{`"${slugify(p.name)}",`}</li>
-                ))}
-            </ul>
 
             <Section gap="s">
                 <Text tag="h2">Install</Text>
