@@ -1,6 +1,6 @@
 /*=============================================== HeaderSearch ===============================================*/
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import classNames from "classnames"
 import {
     Icon,
@@ -21,10 +21,9 @@ export const HeaderSearch = () => {
     const { selectedTheme } = useLibTheme()
 
     const [isOpen, setIsOpen] = useState(false)
-
-    const el = useRef<HTMLFormElement>(null)
-
     const [value, setValue] = useState<string>("")
+    const el = useRef<HTMLFormElement>(null)
+    const inputRef = useRef<HTMLInputElement>(null)
 
     const handleReset = () => {
         setValue("")
@@ -34,9 +33,17 @@ export const HeaderSearch = () => {
     useKeyPress(["Command", "KeyK"], () => {
         setIsOpen(!isOpen)
 
-        if (isOpen) handleReset()
+        if (isOpen) {
+            handleReset()
+        }
     })
     useClickOutside(el, handleReset)
+
+    useEffect(() => {
+        if (isOpen) {
+            setTimeout(() => inputRef?.current?.focus(), 100)
+        }
+    }, [isOpen])
 
     return (
         <>
@@ -58,6 +65,8 @@ export const HeaderSearch = () => {
                         value={value}
                         setValue={setValue}
                         listResults={allPages.map(c => c.name)}
+                        ref={inputRef}
+                        autoFocus
                     />
 
                     <Flexbox gap="xs">
