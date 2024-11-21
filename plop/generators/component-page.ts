@@ -1,6 +1,6 @@
 /*=============================================== Component page ===============================================*/
 
-import { BASE_PATH } from "../utils"
+import { BASE_PATH } from "../utils/index.js"
 import type { NodePlopAPI } from "plop"
 import { categoriesArr } from "../utils/constants.js"
 
