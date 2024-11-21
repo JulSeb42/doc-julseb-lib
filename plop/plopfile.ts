@@ -37,14 +37,13 @@ export default (plop: NodePlopAPI) => {
     kebabName(plop)
 
     /*====================== Generators ======================*/
-    generateComponent(plop)
-    generatePage(plop)
-    generateSingleComponent(plop)
-    generateType(plop)
-
-    generateComponentPage(plop) // TODO: finish => page to render components
-
-    generateGenerator(plop)
+    generateComponent(plop) // yarn plop:c
+    generatePage(plop) // yarn plop:p
+    generateSingleComponent(plop) // yarn plop:sc
+    generateType(plop) // yarn plop:ty
+    generateGenerator(plop) // yarn plop:g
+    generateComponentPage(plop) // yarn plop:cp
+    // TODO: finish => page to render components
 
     /* Prepend plop functions - DO NOT REMOVE */
 }

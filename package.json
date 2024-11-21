@@ -14,9 +14,7 @@
         "plop:p": "yarn plop page",
         "plop:ty": "yarn plop type",
         "plop:cp": "yarn plop component-page",
-        "plop:g": "yarn plop generator",
-        "plop:d": "yarn plop demo",
-        "plop:pr": "yarn plop preview"
+        "plop:g": "yarn plop generator"
     },
     "dependencies": {
         "@julseb-lib/react": "^0.0.72",

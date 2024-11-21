@@ -1,0 +1,17 @@
+/*=============================================== Text ===============================================*/
+
+import { {{>pascalName}} } from "@julseb-lib/react"
+import type { ILib{{>pascalName}} } from "@julseb-lib/react/component-props"
+import type { IPage } from "../../../../types"
+
+export const {{ lowerCase name }}: IPage<ILib{{>pascalName}}> = {
+    name: "{{ titleCase name }}",
+    component: {{>pascalName}},
+    category: "{{ category }}",
+    description: "",
+    imports: ["{{>pascalName}}"],
+    importTypes: ["ILib{{>pascalName}}"],
+    extends: [],
+    props: [],
+    previews: [],
+}
