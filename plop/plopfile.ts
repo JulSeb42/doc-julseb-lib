@@ -10,7 +10,7 @@ import {
     generateType,
     generateComponentPage,
     generateGenerator,
-    generatePreviewPage,
+    /* Prepend import generator - DO NOT REMOVE */
 } from "./generators"
 import { addClosingBrackets, addOpenBrackets, surroundBrackets } from "./utils"
 import { pascalName, kebabName } from "./partials"
@@ -39,10 +39,12 @@ export default (plop: NodePlopAPI) => {
     /*====================== Generators ======================*/
     generateComponent(plop)
     generatePage(plop)
-    
     generateSingleComponent(plop)
     generateType(plop)
-    generateComponentPage(plop)
+
+    generateComponentPage(plop) // TODO: finish => page to render components
+
     generateGenerator(plop)
-    generatePreviewPage(plop)
+
+    /* Prepend plop functions - DO NOT REMOVE */
 }
