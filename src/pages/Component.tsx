@@ -7,11 +7,12 @@ import {
     toTitleCase,
     Section,
     CodeContainer,
+    Hr,
 } from "@julseb-lib/react"
 import { SITE_DATA, allPages } from "../data"
-import { Page, ComponentCard } from "../components"
+import { Page } from "../components"
 import { useLangContext } from "../context"
-import type { IPage } from "../types"
+import type { IPage, Prop } from "../types"
 
 export const Component = () => {
     const { component: comp } = useParams<{
@@ -22,6 +23,7 @@ export const Component = () => {
         p => slugify(p.name) === slugify(comp!)
     )
     const { selectedLang } = useLangContext()
+    const props: Array<Prop> = component.props
 
     return (
         <Page title={component?.name ?? "Component"}>
@@ -63,6 +65,16 @@ export const Component = () => {
             ) : null}
 
             {component?.previews?.map((preview: object | string) => preview)}
+
+            {component.props && (
+                <>
+                    <Hr />
+
+                    {props.map(prop => {
+                        
+                    })}
+                </>
+            )}
         </Page>
     )
 }

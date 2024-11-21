@@ -27,7 +27,9 @@ export const text: IPage<ILibText> = {
         {
             name: "tag",
             type: "string",
-            possibleValues: Object.keys(typeValues.allTextTags).join(" | "),
+            possibleValues: `${Object.keys(typeValues.allTextTags).join(
+                " | "
+            )}`,
             default: "p",
         },
     ],

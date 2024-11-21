@@ -6,4 +6,5 @@ export * from "./ApiResponse.type"
 export * from "./Page.interface"
 export * from "./Category.type"
 export * from "./Variable.interface"
+export * from "./Prop.type"
 /* Prepend - DO NOT REMOVE */
