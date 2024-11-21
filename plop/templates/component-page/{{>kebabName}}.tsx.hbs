@@ -1,6 +1,7 @@
 /*=============================================== Text ===============================================*/
 
 import { {{>pascalName}} } from "@julseb-lib/react"
+import { Preview } from "./preview"
 import type { ILib{{>pascalName}} } from "@julseb-lib/react/component-props"
 import type { IPage } from "../../../../types"
 
@@ -13,5 +14,5 @@ export const {{ lowerCase name }}: IPage<ILib{{>pascalName}}> = {
     importTypes: ["ILib{{>pascalName}}"],
     extends: [],
     props: [],
-    previews: [],
+    previews: [<Preview key={0} />],
 }

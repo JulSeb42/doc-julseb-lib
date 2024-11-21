@@ -11,6 +11,7 @@ import { spacers } from "./pages/styles/spacers"
 import { themeProvider } from "./pages/styles/themeprovider"
 
 import { container } from "./pages/layouts/container"
+import { section } from "./pages/layouts/section"
 /* Prepend import - DO NOT REMOVE */
 
 export const allPages: Array<IPage<any>> = [
@@ -27,6 +28,7 @@ export const allPages: Array<IPage<any>> = [
     /*====================== Layouts ======================*/
 
     container,
+ 	section,
  	/* Prepend array - DO NOT REMOVE */
 
     /*====================== Components ======================*/

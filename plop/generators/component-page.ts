@@ -27,18 +27,18 @@ export default (plop: NodePlopAPI) => {
                 base: "./templates/component-page",
                 verbose: false,
             },
-            // {
-            //     type: "modify",
-            //     path: "../src/data/all-pages.ts",
-            //     template: `import { {{ camelCase name }} } from "./pages/{{ category }}/{{ camelCase name }}"\n$1`,
-            //     pattern: /(\/\* Prepend import - DO NOT REMOVE \*\/)/g,
-            // },
-            // {
-            //     type: "modify",
-            //     path: "../src/data/all-pages.ts",
-            //     template: `{{ camelCase name }},\n \t$1`,
-            //     pattern: /(\/\* Prepend array - DO NOT REMOVE \*\/)/g,
-            // },
+            {
+                type: "modify",
+                path: `${BASE_PATH}/data/all-pages.ts`,
+                template: `import { {{ camelCase name }} } from "./pages/{{ category }}/{{ camelCase name }}"\n$1`,
+                pattern: /(\/\* Prepend import - DO NOT REMOVE \*\/)/g,
+            },
+            {
+                type: "modify",
+                path: "../src/data/all-pages.ts",
+                template: `{{ camelCase name }},\n \t$1`,
+                pattern: /(\/\* Prepend array - DO NOT REMOVE \*\/)/g,
+            },
         ],
     })
 }
