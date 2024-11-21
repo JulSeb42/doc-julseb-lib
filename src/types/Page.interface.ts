@@ -21,9 +21,11 @@ export interface IPage<T> {
     previews: Array<JSX.Element | Preview | string> | null
     props: Array<{
         name: string
-        desc: string
+        type: string
         possibleValues: string | Array<string>
         default: string
+        isRequired?: boolean
+        comment?: string
     }> | null
     noAs?: boolean
     noRef?: boolean

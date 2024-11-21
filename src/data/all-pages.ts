@@ -26,7 +26,7 @@ export const allPages: Array<IPage<any>> = [
 
     /*====================== Layouts ======================*/
 
-    container,
+    // container,
     /* Prepend array - DO NOT REMOVE */
 
     /*====================== Components ======================*/

@@ -1,6 +1,7 @@
 /*=============================================== Text ===============================================*/
 
 import { Text } from "@julseb-lib/react"
+import { typeValues } from "@julseb-lib/react/types"
 import {
     TitlesDisplay,
     Titles,
@@ -22,7 +23,14 @@ export const text: IPage<ILibText> = {
     imports: ["Text"],
     importTypes: ["ILibText"],
     extends: [],
-    props: [],
+    props: [
+        {
+            name: "tag",
+            type: "string",
+            possibleValues: Object.keys(typeValues.allTextTags).join(" | "),
+            default: "p",
+        },
+    ],
     previews: [
         <TitlesDisplay key={0} />,
         <Titles key={1} />,

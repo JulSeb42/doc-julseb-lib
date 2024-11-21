@@ -28,3 +28,5 @@ export const StyledAside = styled(Aside)`
     background-color: ${({ theme }) => theme.DANGER_100};
     ${paddingTop}
 `
+
+// doc-julseb-lib
