@@ -13,6 +13,7 @@ import {
     generatePreviewPage,
 } from "./generators"
 import { addClosingBrackets, addOpenBrackets, surroundBrackets } from "./utils"
+import { pascalName, kebabName } from "./partials"
 import type { NodePlopAPI } from "plop"
 
 export default (plop: NodePlopAPI) => {
@@ -30,9 +31,15 @@ export default (plop: NodePlopAPI) => {
     addClosingBrackets(plop)
     surroundBrackets(plop)
 
+    /*====================== Partials ======================*/
+
+    pascalName(plop)
+    kebabName(plop)
+
     /*====================== Generators ======================*/
     generateComponent(plop)
     generatePage(plop)
+    
     generateSingleComponent(plop)
     generateType(plop)
     generateComponentPage(plop)

@@ -14,9 +14,9 @@ export const PATHS = {
         component = ":component",
         demo = ":demo"
     ) => `${category}/${component}/demo/${demo}`,
-    /* Prepend path - DO NOT REMOVE */
 
     /*====================== Demos ======================*/
-
-    /* Prepend demos - DO NOT REMOVE */
+    
+    
+	/* Prepend demos - DO NOT REMOVE */    
 }
