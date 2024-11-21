@@ -10,9 +10,9 @@ import {
     filterObject,
     PageLoading,
 } from "@julseb-lib/react"
-import { BaseLayout, Header, Nav } from "../"
+import { BaseLayout, Header, Nav } from "components"
 import { NavFooter } from "./NavFooter"
-import { footerLinks } from "../../data"
+import { footerLinks } from "data"
 import { NAV_WIDTH } from "./Nav/styles"
 import type { IBaseLayout } from "./BaseLayout"
 

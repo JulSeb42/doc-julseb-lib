@@ -1,8 +1,8 @@
 /*=============================================== Preview ===============================================*/
 
 import { Flexbox } from "@julseb-lib/react"
-import { ColorCard } from "../../../../components"
-import { allOverlays } from "../../../tokens/all-overlays"
+import { ColorCard } from "components"
+import { allOverlays } from "data"
 
 export const Preview = () => {
     return (

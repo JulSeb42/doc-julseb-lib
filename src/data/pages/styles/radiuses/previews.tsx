@@ -1,8 +1,8 @@
 /*=============================================== Radiuses previews ===============================================*/
 
 import { Grid } from "@julseb-lib/react"
-import { StyleCard } from "../../../../components"
-import { allRadiuses } from "../../../tokens/all-radiuses"
+import { StyleCard } from "components"
+import { allRadiuses } from "data"
 
 export const Preview = () => {
     return (

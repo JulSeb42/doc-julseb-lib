@@ -3,7 +3,7 @@
 import { Section } from "@julseb-lib/react"
 import { Preview } from "./previews"
 import type { ILibSection } from "@julseb-lib/react/component-props"
-import type { IPage } from "../../../../types"
+import type { IPage } from "types"
 
 export const section: IPage<ILibSection> = {
     name: "Section",

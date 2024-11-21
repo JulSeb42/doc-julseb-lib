@@ -2,8 +2,8 @@
 
 import { useLocation } from "react-router-dom"
 import { slugify, Icon, toTitleCase } from "@julseb-lib/react"
-import { allPages } from "../../../data"
-import { PATHS } from "../../../routes"
+import { allPages } from "data"
+import { PATHS } from "routes"
 import { StyledNavFooter, StyledLink } from "./styles"
 
 type Page = {

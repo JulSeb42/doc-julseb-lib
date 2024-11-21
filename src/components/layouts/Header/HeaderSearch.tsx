@@ -14,7 +14,7 @@ import {
     Flexbox,
     Button,
 } from "@julseb-lib/react"
-import { allPages } from "../../../data"
+import { allPages } from "data"
 import { InputContainer, ModalContainer } from "./styles"
 
 export const HeaderSearch = () => {

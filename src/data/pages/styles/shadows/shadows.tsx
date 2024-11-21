@@ -3,7 +3,7 @@
 import { SHADOWS } from "@julseb-lib/react"
 import { Preview } from "./previews"
 import type { LibShadows } from "@julseb-lib/react/types"
-import type { IPage } from "../../../../types"
+import type { IPage } from "types"
 
 export const shadows: IPage<LibShadows> = {
     name: "Shadows",

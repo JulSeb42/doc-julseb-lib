@@ -13,7 +13,7 @@ import {
     DescriptionList,
 } from "./previews"
 import type { ILibText } from "@julseb-lib/react/component-props"
-import type { IPage } from "../../../../types"
+import type { IPage } from "types"
 
 export const text: IPage<ILibText> = {
     name: "Text",

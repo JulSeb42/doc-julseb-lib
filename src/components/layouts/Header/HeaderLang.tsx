@@ -2,9 +2,9 @@
 
 import { useState } from "react"
 import { Button, DropdownContainer, DropdownItem } from "@julseb-lib/react"
-import { useLangContext } from "../../../context"
+import { useLangContext } from "context"
 import { StyledDropdown } from "./styles"
-import type { Lang } from "../../../context/types"
+import type { Lang } from "context/types"
 
 export const HeaderLang = () => {
     const { selectedLang, handleSelectLang, loading } = useLangContext()

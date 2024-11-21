@@ -3,8 +3,8 @@
 import { useState, useRef } from "react"
 import { Link } from "react-router-dom"
 import { useClickOutside, useMaxWidth, useLibTheme } from "@julseb-lib/react"
-import { SITE_DATA } from "../../../data"
-import { PATHS } from "../../../routes"
+import { SITE_DATA } from "data"
+import { PATHS } from "routes"
 import { HeaderNav } from "./HeaderNav"
 import { StyledHeader, StyledBurger } from "./styles"
 

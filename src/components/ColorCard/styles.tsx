@@ -9,7 +9,7 @@ export const StyledColorCard = styled.div`
     overflow: hidden;
     ${Mixins.Flexbox({ $gap: "s", $alignItems: "center" })};
 
-    &:not(:last-child) {
+    &.Color:not(:last-child) {
         margin-bottom: ${SPACERS.L};
     }
 `

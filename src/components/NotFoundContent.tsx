@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom"
 import { Text } from "@julseb-lib/react"
-import { PATHS } from "../routes"
+import { PATHS } from "routes"
 
 export const NotFoundContent = () => {
     return (

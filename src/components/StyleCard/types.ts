@@ -1,6 +1,6 @@
 /*=============================================== StyleCard types ===============================================*/
 
-import type { Variable } from "../../types"
+import type { Variable } from "types"
 
 interface StyleWithShadows {
     shadow: Variable

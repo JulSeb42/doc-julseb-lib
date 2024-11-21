@@ -3,7 +3,7 @@
 import { useParams } from "react-router-dom"
 import styled from "styled-components"
 import { Wrapper, Main, Aside, toTitleCase, SPACERS } from "@julseb-lib/react"
-import { BaseLayout, Header } from "../../components"
+import { BaseLayout, Header } from "components"
 import { containerPreviews } from "../../data/pages/layouts/container/previews"
 
 export const DemoMain = () => {

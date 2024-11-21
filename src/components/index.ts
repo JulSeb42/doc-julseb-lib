@@ -9,4 +9,5 @@ export * from "./NotFoundContent"
 export * from "./ColorCard"
 export * from "./ComponentCard"
 export * from "./StyleCard"
+export * from "./Prop"
 /* Prepend - DO NOT REMOVE */

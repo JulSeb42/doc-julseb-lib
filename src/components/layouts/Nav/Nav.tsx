@@ -3,8 +3,8 @@
 import { Fragment } from "react/jsx-runtime"
 import { NavLink } from "react-router-dom"
 import { slugify, toTitleCase } from "@julseb-lib/react"
-import { categoriesArr } from "../../../types"
-import { navLinks, allPages } from "../../../data"
+import { categoriesArr } from "types"
+import { navLinks, allPages } from "data"
 import { StyledNav } from "./styles"
 
 export const Nav = () => {

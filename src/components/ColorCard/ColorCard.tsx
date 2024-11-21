@@ -1,6 +1,7 @@
 /*=============================================== ColorCard component ===============================================*/
 
 import { Fragment, useState, useEffect } from "react"
+import classNames from "classnames"
 import { Text } from "@julseb-lib/react"
 import { StyledColorCard, Square, Content } from "./styles"
 import type { IVariable } from "./types"
@@ -32,10 +33,8 @@ export const ColorCard: FC<IVariable> = ({ color, overlay }) => {
     }, [color, overlay])
 
     return (
-        <StyledColorCard>
-            <Square
-                style={{ background: color?.hex || overlay?.css }}
-            />
+        <StyledColorCard className={classNames({ Color: !!color })}>
+            <Square style={{ background: color?.hex || overlay?.css }} />
 
             <Content>
                 <Text tag="h5">{(color || overlay)?.name}</Text>

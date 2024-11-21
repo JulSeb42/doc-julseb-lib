@@ -1,6 +1,6 @@
 /*=============================================== Colors ===============================================*/
 
-import type { IPage } from "../../../../types"
+import type { IPage } from "types"
 import { Preview } from "./previews"
 
 export const colors: IPage<null> = {

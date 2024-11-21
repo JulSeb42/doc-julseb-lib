@@ -2,9 +2,9 @@
 
 import { useParams, useLocation, Navigate } from "react-router-dom"
 import { slugify } from "@julseb-lib/react"
-import { allPages } from "../data"
-import { NotFoundContent, Page } from "../components"
-import { categories } from "../types"
+import { allPages } from "data"
+import { NotFoundContent, Page } from "components"
+import { categories } from "types"
 import { NotFound } from "./NotFound"
 
 export const Category = () => {

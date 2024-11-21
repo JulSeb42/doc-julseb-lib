@@ -1,9 +1,9 @@
 /*=============================================== NavLinks ===============================================*/
 
 import type { LibFooterLink } from "@julseb-lib/react/types"
-import { PATHS } from "../routes"
+import { PATHS } from "routes"
 import { SITE_DATA } from "./site-data"
-import type { INavLink } from "../types"
+import type { INavLink } from "types"
 
 export const navLinks: Array<INavLink> = [
     { text: "Homepage", to: PATHS.ROOT, end: true },

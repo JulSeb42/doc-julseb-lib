@@ -1,8 +1,8 @@
 /*=============================================== Spacers previews ===============================================*/
 
 import { Grid } from "@julseb-lib/react"
-import { StyleCard } from "../../../../components"
-import { allSpacers } from "../../../tokens/all-spacers"
+import { StyleCard } from "components"
+import { allSpacers } from "data"
 
 export const Preview = () => {
     return (

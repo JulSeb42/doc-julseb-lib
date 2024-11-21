@@ -2,13 +2,13 @@
 
 // import { Navigate } from "react-router-dom"
 import { PATHS } from "./paths"
-import { Homepage } from "../pages/Homepage"
-import { NotFound } from "../pages/NotFound"
-import { GettingStarted } from "../pages/GettingStarted"
-import { BoilerplatesAndCli } from "../pages/BoilerplatesAndCli"
-import { Category } from "../pages/Category"
-import { Component } from "../pages/Component"
-import { DemoMain } from "../pages/demos/DemoMain"
+import { Homepage } from "pages/Homepage"
+import { NotFound } from "pages/NotFound"
+import { GettingStarted } from "pages/GettingStarted"
+import { BoilerplatesAndCli } from "pages/BoilerplatesAndCli"
+import { Category } from "pages/Category"
+import { Component } from "pages/Component"
+import { DemoMain } from "pages/demos/DemoMain"
 /* Prepend import - DO NOT REMOVE */
 
 /*====================== Demos ======================*/

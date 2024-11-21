@@ -7,8 +7,8 @@ import {
     Button,
     Flexbox,
 } from "@julseb-lib/react"
-import { ComponentCard } from "../../../../components"
-import { useLangContext } from "../../../../context"
+import { ComponentCard } from "components"
+import { useLangContext } from "context"
 
 export const Preview = () => {
     const { selectedLang } = useLangContext()

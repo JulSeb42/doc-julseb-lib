@@ -3,7 +3,7 @@
 import { RADIUSES } from "@julseb-lib/react"
 import { Preview } from "./previews"
 import type { LibRadiuses } from "@julseb-lib/react/types"
-import type { IPage } from "../../../../types"
+import type { IPage } from "types"
 
 export const radiuses: IPage<LibRadiuses> = {
     name: "Radiuses",

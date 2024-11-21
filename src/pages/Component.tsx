@@ -9,10 +9,10 @@ import {
     CodeContainer,
     Hr,
 } from "@julseb-lib/react"
-import { SITE_DATA, allPages } from "../data"
-import { Page } from "../components"
-import { useLangContext } from "../context"
-import type { IPage, Prop } from "../types"
+import { SITE_DATA, allPages } from "data"
+import { Page } from "components"
+import { useLangContext } from "context"
+import type { IPage, Prop } from "types"
 
 export const Component = () => {
     const { component: comp } = useParams<{

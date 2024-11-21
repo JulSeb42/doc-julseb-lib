@@ -1,6 +1,6 @@
 /*=============================================== All pages ===============================================*/
 
-import type { IPage } from "../types"
+import type { IPage } from "types"
 
 import { colors } from "./pages/styles/colors"
 import { overlays } from "./pages/styles/overlays"

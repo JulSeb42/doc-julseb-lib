@@ -1,7 +1,7 @@
 /*=============================================== Colors previews ===============================================*/
 
 import { Section, Text } from "@julseb-lib/react"
-import { ComponentCard } from "../../../../components/ComponentCard"
+import { ComponentCard } from "components"
 
 export const Preview = () => {
     return (

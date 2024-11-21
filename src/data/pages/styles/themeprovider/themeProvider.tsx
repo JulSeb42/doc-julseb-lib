@@ -1,11 +1,8 @@
 /*=============================================== ThemeProvider ===============================================*/
 
 import { ThemeProvider } from "@julseb-lib/react"
-// @ts-ignore
 import { Preview } from "./previews"
-import type {} from "@julseb-lib/react/types"
-import type {} from "@julseb-lib/react/component-props"
-import type { IPage } from "../../../../types"
+import type { IPage } from "types"
 
 export const themeProvider: IPage<null> = {
     name: "ThemeProvider",

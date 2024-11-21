@@ -1,8 +1,8 @@
 /*=============================================== Shadows previews ===============================================*/
 
 import { Grid } from "@julseb-lib/react"
-import { StyleCard } from "../../../../components"
-import { allShadows } from "../../../tokens/all-shadows"
+import { StyleCard } from "components"
+import { allShadows } from "data"
 
 export const Preview = () => {
     return (

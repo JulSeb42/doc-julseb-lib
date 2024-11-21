@@ -1,7 +1,8 @@
 /*=============================================== ColorCard types ===============================================*/
 
-import type { Color, Variable } from "../../types"
+import type { Color, Variable } from "types"
 
+// eslint-disable-next-line
 interface IVariableBase {}
 
 interface VariableColors extends IVariableBase {

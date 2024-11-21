@@ -2,8 +2,8 @@
 
 import { Link, useLocation } from "react-router-dom"
 import { Text } from "@julseb-lib/react"
-import { ComponentCard } from "../../../../components"
-import { COMMON_TEXTS } from "../../../../data"
+import { ComponentCard } from "components"
+import { COMMON_TEXTS } from "data"
 import type { Preview } from "./previews"
 
 export const PreviewLink = ({ name, code, title }: Preview) => {

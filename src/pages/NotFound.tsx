@@ -1,6 +1,6 @@
 /*=============================================== NotFound ===============================================*/
 
-import { Page, NotFoundContent } from "../components"
+import { Page, NotFoundContent } from "components"
 
 export const NotFound = () => {
     return (
