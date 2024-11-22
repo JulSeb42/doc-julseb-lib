@@ -2,6 +2,7 @@
 
 import { Text } from "@julseb-lib/react"
 import { typeValues } from "@julseb-lib/react/types"
+import { COMMON_PROPS } from "data/common-props"
 import {
     TitlesDisplay,
     Titles,
@@ -22,15 +23,53 @@ export const text: IPage<ILibText> = {
     description: "",
     imports: ["Text"],
     importTypes: ["ILibText"],
-    extends: [],
+    extends: ["HTMLElement"],
     props: [
         {
             name: "tag",
             type: "string",
-            possibleValues: `${Object.keys(typeValues.allTextTags).join(
-                " | "
-            )}`,
-            default: "p",
+            possibleValues: Object.keys(typeValues.allTextTags),
+            defaultValue: "p",
+            isRequired: false,
+        },
+        {
+            name: "textAlign",
+            type: "string",
+            possibleValues: [
+                "left",
+                "center",
+                "right",
+                "justify",
+                "inherit",
+                "initial",
+                "revert",
+                "revert-layer",
+                "unset",
+            ],
+            defaultValue: "left",
+            isRequired: false,
+        },
+        {
+            name: "color",
+            type: "string",
+            possibleValues: COMMON_PROPS.ALL_COLORS,
+            defaultValue: "currentColor",
+        },
+        {
+            name: "linkColor",
+            type: "string",
+            possibleValues: Object.values(typeValues.colorsHover),
+            defaultValue: "primary",
+        },
+        {
+            name: "display",
+            type: "boolean",
+            description: (
+                <>
+                    Only when <code>tag</code> is set from <code>h1</code> to{" "}
+                    <code>h5</code>
+                </>
+            ),
         },
     ],
     previews: [

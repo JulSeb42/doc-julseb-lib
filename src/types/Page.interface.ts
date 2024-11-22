@@ -2,6 +2,7 @@
 
 import type { ForwardRefExoticComponent, RefAttributes } from "react"
 import type { Category } from "./Category.type"
+import type { IProp } from "./Prop.interface"
 
 export interface Preview {
     title: string
@@ -19,14 +20,7 @@ export interface IPage<T> {
     importTypes: Array<string> | null
     extends: Array<string> | Array<{ name: string; from: string }> | null // interface extends HTMLDivElement
     previews: Array<JSX.Element | Preview | string> | null
-    props: Array<{
-        name: string
-        type: string
-        possibleValues: string | Array<string>
-        default: string
-        isRequired?: boolean
-        comment?: string
-    }> | null
+    props: Array<IProp> | null
     noAs?: boolean
     noRef?: boolean
 }
