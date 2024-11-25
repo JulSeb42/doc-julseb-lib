@@ -23,4 +23,5 @@ export interface IPage<T> {
     props: Array<IProp> | null
     noAs?: boolean
     noRef?: boolean
+    noData?: boolean
 }

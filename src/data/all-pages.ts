@@ -12,6 +12,7 @@ import { themeProvider } from "./pages/styles/themeprovider"
 
 import { container } from "./pages/layouts/container"
 import { section } from "./pages/layouts/section"
+import { grid } from "./pages/layouts/grid"
 /* Prepend import - DO NOT REMOVE */
 
 export const allPages: Array<IPage<any>> = [
@@ -29,6 +30,7 @@ export const allPages: Array<IPage<any>> = [
 
     container,
  	section,
+ 	grid,
  	/* Prepend array - DO NOT REMOVE */
 
     /*====================== Components ======================*/

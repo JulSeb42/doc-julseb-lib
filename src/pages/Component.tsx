@@ -9,7 +9,7 @@ import {
     CodeContainer,
     Hr,
 } from "@julseb-lib/react"
-import { SITE_DATA, allPages } from "data"
+import { SITE_DATA, allPages, dataTestProp, asProp } from "data"
 import { Page, PropCard } from "components"
 import { useLangContext } from "context"
 import type { IPage, IProp } from "types"
@@ -23,7 +23,11 @@ export const Component = () => {
         p => slugify(p.name) === slugify(comp!)
     )
     const { selectedLang } = useLangContext()
-    const props: Array<IProp> = component.props
+    const props: Array<IProp> = [
+        !component.noData ? dataTestProp : null,
+        !component.noAs ? asProp : null,
+        ...component.props,
+    ]
 
     return (
         <Page title={component?.name ?? "Component"}>
@@ -70,9 +74,13 @@ export const Component = () => {
                 <>
                     <Hr />
 
-                    {props.map((prop, i) => (
-                        <PropCard prop={prop} key={i} />
-                    ))}
+                    <Section gap="s">
+                        {props
+                            .filter(prop => !!prop.name)
+                            .map((prop, i) => (
+                                <PropCard prop={prop} key={i} />
+                            ))}
+                    </Section>
                 </>
             )}
         </Page>

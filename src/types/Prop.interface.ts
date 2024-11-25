@@ -13,9 +13,15 @@ interface PropWithBoolean extends IPropBase {
 }
 
 interface PropWithOther extends IPropBase {
-    type: "" | "string" | "Array<string>" | "LibAllColors" | "number"
+    type:
+        | ""
+        | "string"
+        | "Array<string>"
+        | "LibAllColors"
+        | "number"
+        | "boolean"
     possibleValues: Array<string> | Children
-    defaultValue: string
+    defaultValue?: string
 }
 
 export type IProp = PropWithBoolean | PropWithOther

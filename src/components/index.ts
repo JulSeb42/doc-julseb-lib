@@ -10,4 +10,5 @@ export * from "./ColorCard"
 export * from "./ComponentCard"
 export * from "./StyleCard"
 export * from "./PropCard"
+export * from "./GridItem"
 /* Prepend - DO NOT REMOVE */
