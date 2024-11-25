@@ -23,11 +23,14 @@ export const Component = () => {
         p => slugify(p.name) === slugify(comp!)
     )
     const { selectedLang } = useLangContext()
-    const props: Array<IProp> = [
-        !component.noData ? dataTestProp : null,
-        !component.noAs ? asProp : null,
-        ...component.props,
-    ]
+
+    const props: Array<IProp> | null = component.props
+        ? [
+              !component.noData ? dataTestProp : null,
+              !component.noAs ? asProp : null,
+              ...component.props,
+          ]
+        : null
 
     return (
         <Page title={component?.name ?? "Component"}>
@@ -76,7 +79,7 @@ export const Component = () => {
 
                     <Section gap="s">
                         {props
-                            .filter(prop => !!prop.name)
+                            ?.filter(prop => !!prop.name)
                             .map((prop, i) => (
                                 <PropCard prop={prop} key={i} />
                             ))}

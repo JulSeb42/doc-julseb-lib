@@ -18,6 +18,11 @@ export const DemoContainer = styled.div`
     position: relative;
     height: fit-content;
     min-height: 100px;
+
+    background-image: var(--polka-bg-image);
+    background-position: var(--polka-bg-position);
+    background-size: var(--polka-bg-size);
+    background-color: var(--polka-bg-color);
 `
 
 export const CodeContainer = styled.div`

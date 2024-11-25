@@ -7,38 +7,17 @@
 */
 
 :root {
-    --polka-bg-image: radial-gradient(rgb(228, 228, 228) 30%, transparent 30%),
-        radial-gradient(rgb(228, 228, 228) 30%, transparent 30%);
+    --polka-bg-image: radial-gradient(rgb(200, 200, 200) 12%, transparent 12%),
+        radial-gradient(rgb(200, 200, 200) 12%, transparent 12%);
     --polka-bg-position: 0px 0px, 8px 8px;
     --polka-bg-size: 16px 16px;
-    --polka-bg-color: rgb(248, 248, 248);
-
-    --grid-background: var(--color-light-gray-50);
-    --grid-background-image: linear-gradient(
-            rgba(200, 200, 200, 0.3) 0.1em,
-            transparent 0.1em
-        ),
-        linear-gradient(
-            90deg,
-            rgba(200, 200, 200, 0.3) 0.1em,
-            transparent 0.1em
-        );
-    --grid-background-size: 3em 3em;
-}
-
-.GridBackground {
-    background: var(--grid-background);
-    background-image: var(--grid-background-image);
-    background-size: var(--grid-background-size);
-    background-position: center;
+    --polka-bg-color: rgb(255, 255, 255);
 }
 
 .dark {
-    --grid-background: var(--color-dark-gray-50);
-    --grid-background-image: linear-gradient(
-            rgba(71, 71, 71, 0.3) 0.1em,
-            transparent 0.1em
-        ),
-        linear-gradient(90deg, rgba(71, 71, 71, 0.3) 0.1em, transparent 0.1em);
-    --grid-background-size: 3em 3em;
+    --polka-bg-image: radial-gradient(rgb(94, 94, 94) 12%, transparent 12%),
+        radial-gradient(rgb(94, 94, 94) 12%, transparent 12%);
+    --polka-bg-position: 0px 0px, 8px 8px;
+    --polka-bg-size: 16px 16px;
+    --polka-bg-color: rgb(18, 18, 18);
 }
