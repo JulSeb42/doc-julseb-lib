@@ -1,5 +1,3 @@
-/*=============================================== LangContext types ===============================================*/
-
 export type Lang = "js" | "ts"
 
 export interface ILangContext {

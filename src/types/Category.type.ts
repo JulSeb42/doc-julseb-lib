@@ -1,5 +1,3 @@
-/*=============================================== Category interface ===============================================*/
-
 export const categories = {
     styles: "styles",
     layouts: "layouts",

@@ -1,5 +1,3 @@
-/*=============================================== Category ===============================================*/
-
 import { useParams, useLocation, Navigate } from "react-router-dom"
 import { slugify } from "@julseb-lib/react"
 import { allPages } from "data"

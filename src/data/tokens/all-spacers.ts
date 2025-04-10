@@ -1,5 +1,3 @@
-/*=============================================== Spacers ===============================================*/
-
 import { LIB_TOKENS, SPACERS } from "@julseb-lib/react"
 
 export const allSpacers = [

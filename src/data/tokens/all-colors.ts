@@ -1,5 +1,3 @@
-/*=============================================== All colors ===============================================*/
-
 import type { Color } from "types"
 
 export const colorsLight: Array<Color> = [

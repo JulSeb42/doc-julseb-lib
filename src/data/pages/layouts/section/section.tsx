@@ -1,5 +1,3 @@
-/*=============================================== Text ===============================================*/
-
 import { Section } from "@julseb-lib/react"
 import { Preview } from "./previews"
 import type { ILibSection } from "@julseb-lib/react/component-props"

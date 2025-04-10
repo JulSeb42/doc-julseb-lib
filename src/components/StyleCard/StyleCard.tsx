@@ -1,5 +1,3 @@
-/*=============================================== StyleCard component ===============================================*/
-
 import classNames from "classnames"
 import { Flexbox, Text } from "@julseb-lib/react"
 import { StyledStyleCard, Square } from "./styles"

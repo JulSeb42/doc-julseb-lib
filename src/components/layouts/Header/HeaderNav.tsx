@@ -1,5 +1,3 @@
-/*=============================================== HeaderNav ===============================================*/
-
 import { useState, useEffect } from "react"
 import { Flexbox, ButtonIcon, useLibTheme, Text } from "@julseb-lib/react"
 import { SITE_DATA } from "data"

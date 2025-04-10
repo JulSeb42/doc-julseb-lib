@@ -1,5 +1,3 @@
-/*=============================================== Prop interface ===============================================*/
-
 interface IPropBase {
     name: string
     description?: Children
@@ -20,6 +18,7 @@ interface PropWithOther extends IPropBase {
         | "LibAllColors"
         | "number"
         | "boolean"
+        | "number | string"
     possibleValues: Array<string> | Children
     defaultValue?: string
 }

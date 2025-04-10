@@ -1,5 +1,3 @@
-/*=============================================== Colors ===============================================*/
-
 import type { IPage } from "types"
 import { Preview } from "./previews"
 

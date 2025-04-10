@@ -1,5 +1,3 @@
-/*=============================================== ColorCard styles ===============================================*/
-
 import styled from "styled-components"
 import { Mixins, RADIUSES, SPACERS } from "@julseb-lib/react"
 

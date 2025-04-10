@@ -1,5 +1,3 @@
-/*=============================================== Nav styles ===============================================*/
-
 import styled from "styled-components"
 import { MEDIA, Mixins, SPACERS } from "@julseb-lib/react"
 

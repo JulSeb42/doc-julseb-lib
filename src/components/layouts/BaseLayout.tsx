@@ -1,5 +1,3 @@
-/*=============================================== Page ===============================================*/
-
 import { ResetScroll, Helmet } from "@julseb-lib/react"
 import type { LibMainSize } from "@julseb-lib/react/types"
 import type { ILibPageLayout } from "@julseb-lib/react/component-props"

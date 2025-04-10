@@ -1,5 +1,3 @@
-/*=============================================== Base Props ===============================================*/
-
 import type { IProp } from "types"
 
 export const dataTestProp: IProp = {

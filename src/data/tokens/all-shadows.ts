@@ -1,5 +1,3 @@
-/*=============================================== All shadows ===============================================*/
-
 import { SHADOWS, LIB_TOKENS } from "@julseb-lib/react"
 import type { Variable } from "types"
 

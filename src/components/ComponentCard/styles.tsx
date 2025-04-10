@@ -1,5 +1,3 @@
-/*=============================================== ComponentCard styles ===============================================*/
-
 import styled from "styled-components"
 import { OVERLAYS, RADIUSES, SPACERS, Text } from "@julseb-lib/react"
 

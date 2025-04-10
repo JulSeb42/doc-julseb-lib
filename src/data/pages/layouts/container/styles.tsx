@@ -1,5 +1,3 @@
-/*=============================================== Styles ===============================================*/
-
 import styled, { css } from "styled-components"
 import { Link } from "react-router-dom"
 import { Mixins, Wrapper, Main, Aside, SPACERS } from "@julseb-lib/react"
@@ -7,8 +5,6 @@ import { Mixins, Wrapper, Main, Aside, SPACERS } from "@julseb-lib/react"
 export const StyledLink = styled(Link)`
     ${Mixins.Flexbox({ $alignItems: "center", $gap: "xxs" })}
 `
-
-/*====================== Preview ======================*/
 
 const paddingTop = css`
     padding-top: calc(${SPACERS.XXL} + 56px);

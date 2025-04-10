@@ -1,5 +1,3 @@
-/*=============================================== Page type ===============================================*/
-
 import type { ForwardRefExoticComponent, RefAttributes } from "react"
 import type { Category } from "./Category.type"
 import type { IProp } from "./Prop.interface"

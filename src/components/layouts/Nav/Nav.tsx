@@ -1,5 +1,3 @@
-/*=============================================== Nav component ===============================================*/
-
 import { Fragment } from "react/jsx-runtime"
 import { NavLink } from "react-router-dom"
 import { slugify, toTitleCase } from "@julseb-lib/react"

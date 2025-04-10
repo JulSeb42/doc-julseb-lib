@@ -1,5 +1,3 @@
-/*=============================================== Overlays ===============================================*/
-
 import { Preview } from "./previews"
 import type { IPage } from "types"
 

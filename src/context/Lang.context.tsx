@@ -1,5 +1,3 @@
-/*=============================================== Lang context ===============================================*/
-
 import { createContext, useContext, useState, useEffect } from "react"
 import type { ILangContext, Lang } from "./types"
 

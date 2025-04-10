@@ -1,5 +1,3 @@
-/*=============================================== BoilerplatesAndCli ===============================================*/
-
 import { Text, Section, CodeContainer } from "@julseb-lib/react"
 import { Page } from "components"
 import { SITE_DATA } from "data"

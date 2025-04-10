@@ -1,5 +1,3 @@
-/*=============================================== HeaderLang ===============================================*/
-
 import { useState } from "react"
 import { Button, DropdownContainer, DropdownItem } from "@julseb-lib/react"
 import { useLangContext } from "context"

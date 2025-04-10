@@ -1,5 +1,3 @@
-/*=============================================== Generate page ===============================================*/
-
 import type { NodePlopAPI } from "plop"
 import { toKebabCase, toTitleCase } from "@julseb-lib/utils"
 import { BASE_PATH } from "../utils/index.js"

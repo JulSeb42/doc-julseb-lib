@@ -1,5 +1,3 @@
-/*=============================================== Component ===============================================*/
-
 import { useParams } from "react-router-dom"
 import {
     slugify,

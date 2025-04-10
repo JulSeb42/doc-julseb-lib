@@ -1,5 +1,3 @@
-/*=============================================== NavLinks ===============================================*/
-
 import type { LibFooterLink } from "@julseb-lib/react/types"
 import { PATHS } from "routes"
 import { SITE_DATA } from "./site-data"

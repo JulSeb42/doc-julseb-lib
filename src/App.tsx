@@ -1,5 +1,3 @@
-/*=============================================== App ===============================================*/
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { ThemeProvider, PageLoading, useLibTheme } from "@julseb-lib/react"
 import { routes } from "./routes"

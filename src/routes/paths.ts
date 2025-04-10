@@ -1,5 +1,3 @@
-/*=============================================== Paths ===============================================*/
-
 export const PATHS = {
     ROOT: "/",
     GETTING_STARTED: "/getting-started",
@@ -15,8 +13,5 @@ export const PATHS = {
         demo = ":demo"
     ) => `${category}/${component}/demo/${demo}`,
 
-    /*====================== Demos ======================*/
-    
-    
-	/* Prepend demos - DO NOT REMOVE */    
+    /* Prepend demos - DO NOT REMOVE */
 }

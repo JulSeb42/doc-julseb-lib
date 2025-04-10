@@ -1,5 +1,3 @@
-/*=============================================== Header styles ===============================================*/
-
 import styled, { css } from "styled-components"
 import {
     Mixins,

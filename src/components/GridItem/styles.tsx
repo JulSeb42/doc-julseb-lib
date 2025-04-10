@@ -1,5 +1,3 @@
-/*=============================================== GridItem styles ===============================================*/
-
 import styled from "styled-components"
 import { RADIUSES, SPACERS } from "@julseb-lib/react"
 

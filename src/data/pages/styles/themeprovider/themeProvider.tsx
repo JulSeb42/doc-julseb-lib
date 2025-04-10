@@ -1,5 +1,3 @@
-/*=============================================== ThemeProvider ===============================================*/
-
 import { ThemeProvider } from "@julseb-lib/react"
 import { Preview } from "./previews"
 import type { IPage } from "types"

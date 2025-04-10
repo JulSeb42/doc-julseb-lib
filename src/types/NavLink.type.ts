@@ -1,5 +1,3 @@
-/*=============================================== Nav link types ===============================================*/
-
 import type { IPage } from "./Page.interface"
 
 export type INavLink = {

@@ -1,5 +1,3 @@
-/*=============================================== Shadows ===============================================*/
-
 import { SHADOWS } from "@julseb-lib/react"
 import { Preview } from "./previews"
 import type { LibShadows } from "@julseb-lib/react/types"
@@ -14,7 +12,5 @@ export const shadows: IPage<LibShadows> = {
     importTypes: null,
     extends: null,
     props: null,
-    previews: [
-        <Preview key={0} />,
-    ],
+    previews: [<Preview key={0} />],
 }

@@ -1,5 +1,3 @@
-/*=============================================== ColorCard component ===============================================*/
-
 import { Fragment, useState, useEffect } from "react"
 import classNames from "classnames"
 import { Text } from "@julseb-lib/react"

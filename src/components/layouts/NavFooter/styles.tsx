@@ -1,5 +1,3 @@
-/*=============================================== NavFooter styles ===============================================*/
-
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import { Mixins, LAYOUTS, MEDIA, TRANSITIONS } from "@julseb-lib/react"

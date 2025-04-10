@@ -1,5 +1,3 @@
-/*=============================================== Colors previews ===============================================*/
-
 import { Grid } from "@julseb-lib/react"
 import { ComponentCard, GridItem } from "components"
 

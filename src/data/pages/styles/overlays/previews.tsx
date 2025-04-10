@@ -1,5 +1,3 @@
-/*=============================================== Preview ===============================================*/
-
 import { Flexbox } from "@julseb-lib/react"
 import { ColorCard } from "components"
 import { allOverlays } from "data"

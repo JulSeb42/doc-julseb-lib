@@ -1,5 +1,3 @@
-/*=============================================== Container ===============================================*/
-
 import { Wrapper, Main, Aside } from "@julseb-lib/react"
 import type {
     ILibWrapper,

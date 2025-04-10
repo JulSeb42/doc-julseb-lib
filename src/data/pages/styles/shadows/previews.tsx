@@ -1,5 +1,3 @@
-/*=============================================== Shadows previews ===============================================*/
-
 import { Grid } from "@julseb-lib/react"
 import { StyleCard } from "components"
 import { allShadows } from "data"

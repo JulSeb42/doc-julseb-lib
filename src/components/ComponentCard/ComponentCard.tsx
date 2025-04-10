@@ -1,5 +1,3 @@
-/*=============================================== ComponentCard component ===============================================*/
-
 import { useState } from "react"
 import classNames from "classnames"
 import reactElementToJSXString from "react-element-to-jsx-string"

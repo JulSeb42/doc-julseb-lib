@@ -1,5 +1,3 @@
-/*=============================================== Title ===============================================*/
-
 import { Text } from "@julseb-lib/react"
 import type { IPropCard } from "./types"
 

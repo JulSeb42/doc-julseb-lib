@@ -1,5 +1,3 @@
-/*=============================================== Colors previews ===============================================*/
-
 import { Tabs } from "@julseb-lib/react"
 import { ColorCard } from "components"
 import { colorsLight, colorsDark } from "../../../tokens/all-colors"

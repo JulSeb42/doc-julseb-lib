@@ -1,5 +1,3 @@
-/*=============================================== Text ===============================================*/
-
 import { Text } from "@julseb-lib/react"
 import { typeValues } from "@julseb-lib/react/types"
 import { COMMON_PROPS } from "data/common-props"

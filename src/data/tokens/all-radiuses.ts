@@ -1,5 +1,3 @@
-/*=============================================== All radiuses ===============================================*/
-
 import { RADIUSES, LIB_TOKENS } from "@julseb-lib/react"
 import type { Variable } from "types"
 

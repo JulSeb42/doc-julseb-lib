@@ -1,5 +1,3 @@
-/*=============================================== Spacers previews ===============================================*/
-
 import { Grid } from "@julseb-lib/react"
 import { StyleCard } from "components"
 import { allSpacers } from "data"

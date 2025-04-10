@@ -1,5 +1,3 @@
-/*=============================================== Generate component ===============================================*/
-
 import chalk from "chalk"
 import figlet from "figlet"
 import { runCommand } from "./actions"
@@ -23,20 +21,15 @@ export default (plop: NodePlopAPI) => {
         )
     )
 
-    /*====================== Actions ======================*/
     runCommand(plop)
 
-    /*====================== Utils ======================*/
     addOpenBrackets(plop)
     addClosingBrackets(plop)
     surroundBrackets(plop)
 
-    /*====================== Partials ======================*/
-
     pascalName(plop)
     kebabName(plop)
 
-    /*====================== Generators ======================*/
     generateComponent(plop) // yarn plop:c
     generatePage(plop) // yarn plop:p
     generateSingleComponent(plop) // yarn plop:sc

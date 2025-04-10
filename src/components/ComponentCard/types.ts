@@ -1,5 +1,3 @@
-/*=============================================== ComponentCard types ===============================================*/
-
 export interface IComponentCard {
     displayName: string
     title?: string

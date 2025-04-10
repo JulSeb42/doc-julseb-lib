@@ -1,5 +1,3 @@
-/*=============================================== Site data ===============================================*/
-
 import packageJson from "../../package.json"
 
 const versionArr = packageJson.dependencies["@julseb-lib/react"].split(".")

@@ -1,5 +1,3 @@
-/*=============================================== Routes ===============================================*/
-
 // import { Navigate } from "react-router-dom"
 import { PATHS } from "./paths"
 import { Homepage } from "pages/Homepage"
@@ -10,8 +8,6 @@ import { Category } from "pages/Category"
 import { Component } from "pages/Component"
 import { DemoMain } from "pages/demos/DemoMain"
 /* Prepend import - DO NOT REMOVE */
-
-/*====================== Demos ======================*/
 
 /* Prepend demos import - DO NOT REMOVE */
 

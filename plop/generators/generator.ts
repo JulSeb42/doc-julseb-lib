@@ -1,5 +1,3 @@
-/*=============================================== Generate generator ===============================================*/
-
 import type { NodePlopAPI } from "plop"
 
 export default (plop: NodePlopAPI) => {
@@ -30,7 +28,8 @@ export default (plop: NodePlopAPI) => {
                 type: "modify",
                 path: "./plopfile.ts",
                 template: `generate{{>pascalName}},\n\t$1`,
-                pattern: /(\/\* Prepend import generator - DO NOT REMOVE \*\/)/g,
+                pattern:
+                    /(\/\* Prepend import generator - DO NOT REMOVE \*\/)/g,
             },
             {
                 type: "modify",

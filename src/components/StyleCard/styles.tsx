@@ -1,5 +1,3 @@
-/*=============================================== StyleCard styles ===============================================*/
-
 import styled from "styled-components"
 import { Mixins, RADIUSES, SPACERS } from "@julseb-lib/react"
 
@@ -10,7 +8,7 @@ export const StyledStyleCard = styled.div`
     ${Mixins.Flexbox({
         $flexDirection: "column",
         $gap: "m",
-        $justifyContent: "flex-end"
+        $justifyContent: "flex-end",
     })}
 `
 

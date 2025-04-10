@@ -1,5 +1,3 @@
-/*=============================================== PropCard component ===============================================*/
-
 import { Fragment } from "react/jsx-runtime"
 import { Text } from "@julseb-lib/react"
 import { Title } from "./Title"

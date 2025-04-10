@@ -1,5 +1,3 @@
-/*=============================================== Export all components ===============================================*/
-
 export * from "./layouts/BaseLayout"
 export * from "./layouts/Header"
 export * from "./layouts/Nav"

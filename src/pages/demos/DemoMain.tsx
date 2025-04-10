@@ -1,5 +1,3 @@
-/*=============================================== DemoMain ===============================================*/
-
 import { useParams } from "react-router-dom"
 import styled from "styled-components"
 import { Wrapper, Main, Aside, toTitleCase, SPACERS } from "@julseb-lib/react"

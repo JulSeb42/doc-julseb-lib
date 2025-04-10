@@ -1,5 +1,3 @@
-/*=============================================== Text previews ===============================================*/
-
 import { Link } from "react-router-dom"
 import { Text } from "@julseb-lib/react"
 import { ComponentCard } from "components"

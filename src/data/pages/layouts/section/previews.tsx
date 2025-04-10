@@ -1,5 +1,3 @@
-/*=============================================== Colors previews ===============================================*/
-
 import { Section, Text } from "@julseb-lib/react"
 import { ComponentCard } from "components"
 

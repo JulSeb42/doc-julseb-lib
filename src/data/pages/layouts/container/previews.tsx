@@ -1,5 +1,3 @@
-/*=============================================== Previews ===============================================*/
-
 import { Text, LIB_TOKENS, Section, FullBleed, Image } from "@julseb-lib/react"
 import { StyledMain, StyledAside } from "./styles"
 

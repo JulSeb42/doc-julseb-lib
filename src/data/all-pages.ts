@@ -1,5 +1,3 @@
-/*=============================================== All pages ===============================================*/
-
 import type { IPage } from "types"
 
 import { colors } from "./pages/styles/colors"
@@ -16,8 +14,6 @@ import { grid } from "./pages/layouts/grid"
 /* Prepend import - DO NOT REMOVE */
 
 export const allPages: Array<IPage<any>> = [
-    /*====================== Styles ======================*/
-
     colors,
     overlays,
     text,
@@ -26,16 +22,10 @@ export const allPages: Array<IPage<any>> = [
     spacers,
     themeProvider,
 
-    /*====================== Layouts ======================*/
-
     container,
- 	section,
- 	grid,
- 	/* Prepend array - DO NOT REMOVE */
-
-    /*====================== Components ======================*/
-
-    /*====================== Helpers ======================*/
+    section,
+    grid,
+    /* Prepend array - DO NOT REMOVE */
 ]
 
 export const pages = allPages.map(p => ({ name: p.name, category: p.category }))

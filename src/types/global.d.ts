@@ -1,5 +1,3 @@
-/*=============================================== Global types ===============================================*/
-
 import "styled-components"
 import type { FunctionComponent, ElementType as ElType } from "react"
 import type { COLORS_LIGHT, COLORS_DARK } from "@julseb-lib/react"
